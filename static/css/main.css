@@ -2,8 +2,8 @@ body {
     padding-top: 60px;
     padding-bottom: 40px;
 }
-.vbottom {
+#homepage-text {
     display: inline-block;
-    vertical-align: bottom;
+    padding-top: 350px; /* Fuckit, relative. */
     float: none;
 }

@@ -31,13 +31,33 @@
             {% block content %} Content Missing {% end %}
             <hr />
             <footer>
-                <a href="http://root-the-box.com" target="_blank">
-                    Root the Box
+                <a href="https://letsjusthackshit.org/" target="_blank">
+                    Let's Just Hack Shit
                 </a> &copy; {{ datetime.date.today().year }} -
-                Version {{ handler.application.settings['version'] }} -
-                <a href="https://github.com/moloch--/RootTheBox" target="_blank">Source Code</a> -
-                <a href="https://github.com/moloch--/RootTheBox/issues" target="_blank">Submit a Bug</a>
+                rtb version {{ handler.application.settings['version'] }} -
+                <a href="#" data-toggle="modal" data-target="#attributionModal">#attribution</button>
             </footer>
         </div><!--/.fluid-container-->
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Attribution!</h4>
+            </div>
+            <div class="modal-body">
+                So this RootTheBox Capture the Flagzors is based on RootTheBox. if you want to check out their thing:
+                <a href="https://github.com/moloch--/RootTheBox" target="_blank">Source Code</a> -
+                <a href="https://github.com/moloch--/RootTheBox/issues" target="_blank">Submit a Bug</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
     </body>
 </html>

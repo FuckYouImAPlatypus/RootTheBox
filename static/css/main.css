@@ -2,3 +2,8 @@ body {
     padding-top: 60px;
     padding-bottom: 40px;
 }
+#info-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
